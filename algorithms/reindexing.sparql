@@ -1,0 +1,17 @@
+INSERT {
+  :aaa-auction-bid-40 ?p1 ?o1;
+    auction:bid 40 ;
+    auction:sponsor :sponsorID ;
+    owl:sameAs :jedzenie_tutaj .
+  ?s2 ?p2 :aaa-auction-bid-40 .
+}
+
+DELETE {
+  :jedzenie_tutaj ?p1 ?o1 .
+  ?s2 ?p2 :jedzenie_tutaj .
+}
+
+WHERE {
+  :jedzenie_tutaj ?p1 ?o1 .
+  ?s2 ?p2 :jedzenie_tutaj .
+}

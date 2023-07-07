@@ -1,0 +1,6 @@
+select * where {
+  ?resto :type :restaurant .
+  ?resto :City ex:Nantes .
+  ?resto:Food_style :Street .
+  ?resto :review :Decent
+}

@@ -1,0 +1,17 @@
+INSERT {
+  :newIndex ?p1 ?o1;
+    auction:bid 'bid_amount' ;
+    auction:sponsor :user ;
+    owl:sameAs :oldIndex .
+  ?s2 ?p2 :newIndex .
+}
+
+DELETE {
+  :oldIndex ?p1 ?o1 .
+  ?s2 ?p2 :oldIndex .
+}
+
+WHERE {
+  :oldIndex ?p1 ?o1 .
+  ?s2 ?p2 :oldIndex .
+}

@@ -1,0 +1,10 @@
+select coalesce(?id, ?restaurant) where {
+  ?resto :type :restaurant .
+  ?resto :City ex:Nantes .
+  ?resto :Food_style :Street .
+  ?resto :review :Decent .
+  optional {
+    ?resto auction:bid ?bid .
+    ?resto auction:id ?id
+  }
+} order by ?bid
